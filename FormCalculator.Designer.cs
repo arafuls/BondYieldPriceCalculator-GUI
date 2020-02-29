@@ -234,6 +234,7 @@
             this.buttonCalcYield.TabIndex = 29;
             this.buttonCalcYield.Text = "Calculate";
             this.buttonCalcYield.UseVisualStyleBackColor = true;
+            this.buttonCalcYield.Click += new System.EventHandler(this.buttonCalcYield_Click);
             // 
             // textBoxYieldPrice
             // 
