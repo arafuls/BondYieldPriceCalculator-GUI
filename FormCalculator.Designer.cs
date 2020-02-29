@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelBondPrice = new System.Windows.Forms.Panel();
+            this.price = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
             this.buttonCalcPrice = new System.Windows.Forms.Button();
             this.textBoxPriceRate = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@
             this.labelPriceCoupon = new System.Windows.Forms.Label();
             this.labelBondPrice = new System.Windows.Forms.Label();
             this.panelBondYield = new System.Windows.Forms.Panel();
+            this.yield = new System.Windows.Forms.Label();
             this.labelYield = new System.Windows.Forms.Label();
             this.buttonCalcYield = new System.Windows.Forms.Button();
             this.textBoxYieldPrice = new System.Windows.Forms.TextBox();
@@ -58,6 +60,7 @@
             // 
             // panelBondPrice
             // 
+            this.panelBondPrice.Controls.Add(this.price);
             this.panelBondPrice.Controls.Add(this.labelPrice);
             this.panelBondPrice.Controls.Add(this.buttonCalcPrice);
             this.panelBondPrice.Controls.Add(this.textBoxPriceRate);
@@ -71,17 +74,27 @@
             this.panelBondPrice.Controls.Add(this.labelBondPrice);
             this.panelBondPrice.Location = new System.Drawing.Point(12, 12);
             this.panelBondPrice.Name = "panelBondPrice";
-            this.panelBondPrice.Size = new System.Drawing.Size(137, 218);
+            this.panelBondPrice.Size = new System.Drawing.Size(137, 206);
             this.panelBondPrice.TabIndex = 23;
+            // 
+            // price
+            // 
+            this.price.AutoSize = true;
+            this.price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.Location = new System.Drawing.Point(10, 173);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(31, 17);
+            this.price.TabIndex = 32;
+            this.price.Text = "N/A";
             // 
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
             this.labelPrice.BackColor = System.Drawing.SystemColors.Control;
-            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(13, 156);
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrice.Location = new System.Drawing.Point(10, 156);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(40, 17);
+            this.labelPrice.Size = new System.Drawing.Size(45, 17);
             this.labelPrice.TabIndex = 30;
             this.labelPrice.Text = "Price";
             // 
@@ -93,6 +106,7 @@
             this.buttonCalcPrice.TabIndex = 29;
             this.buttonCalcPrice.Text = "Calculate";
             this.buttonCalcPrice.UseVisualStyleBackColor = true;
+            this.buttonCalcPrice.Click += new System.EventHandler(this.buttonCalcPrice_Click);
             // 
             // textBoxPriceRate
             // 
@@ -174,6 +188,7 @@
             // 
             // panelBondYield
             // 
+            this.panelBondYield.Controls.Add(this.yield);
             this.panelBondYield.Controls.Add(this.labelYield);
             this.panelBondYield.Controls.Add(this.buttonCalcYield);
             this.panelBondYield.Controls.Add(this.textBoxYieldPrice);
@@ -187,17 +202,27 @@
             this.panelBondYield.Controls.Add(this.labelBondYield);
             this.panelBondYield.Location = new System.Drawing.Point(165, 12);
             this.panelBondYield.Name = "panelBondYield";
-            this.panelBondYield.Size = new System.Drawing.Size(137, 218);
+            this.panelBondYield.Size = new System.Drawing.Size(137, 206);
             this.panelBondYield.TabIndex = 30;
+            // 
+            // yield
+            // 
+            this.yield.AutoSize = true;
+            this.yield.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yield.Location = new System.Drawing.Point(11, 173);
+            this.yield.Name = "yield";
+            this.yield.Size = new System.Drawing.Size(31, 17);
+            this.yield.TabIndex = 33;
+            this.yield.Text = "N/A";
             // 
             // labelYield
             // 
             this.labelYield.AutoSize = true;
             this.labelYield.BackColor = System.Drawing.SystemColors.Control;
-            this.labelYield.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelYield.Location = new System.Drawing.Point(14, 156);
+            this.labelYield.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelYield.Location = new System.Drawing.Point(11, 156);
             this.labelYield.Name = "labelYield";
-            this.labelYield.Size = new System.Drawing.Size(39, 17);
+            this.labelYield.Size = new System.Drawing.Size(44, 17);
             this.labelYield.TabIndex = 31;
             this.labelYield.Text = "Yield";
             // 
@@ -294,7 +319,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(314, 267);
+            this.ClientSize = new System.Drawing.Size(314, 245);
             this.Controls.Add(this.panelBondYield);
             this.Controls.Add(this.panelBondPrice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -337,6 +362,8 @@
         private System.Windows.Forms.Label labelBondYield;
         private System.Windows.Forms.Label labelPrice;
         private System.Windows.Forms.Label labelYield;
+        private System.Windows.Forms.Label price;
+        private System.Windows.Forms.Label yield;
     }
 }
 
