@@ -74,7 +74,7 @@
             this.panelBondPrice.Controls.Add(this.labelBondPrice);
             this.panelBondPrice.Location = new System.Drawing.Point(12, 12);
             this.panelBondPrice.Name = "panelBondPrice";
-            this.panelBondPrice.Size = new System.Drawing.Size(137, 206);
+            this.panelBondPrice.Size = new System.Drawing.Size(137, 204);
             this.panelBondPrice.TabIndex = 23;
             // 
             // price
@@ -202,7 +202,7 @@
             this.panelBondYield.Controls.Add(this.labelBondYield);
             this.panelBondYield.Location = new System.Drawing.Point(165, 12);
             this.panelBondYield.Name = "panelBondYield";
-            this.panelBondYield.Size = new System.Drawing.Size(137, 206);
+            this.panelBondYield.Size = new System.Drawing.Size(137, 204);
             this.panelBondYield.TabIndex = 30;
             // 
             // yield
@@ -320,7 +320,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(314, 245);
+            this.ClientSize = new System.Drawing.Size(314, 228);
             this.Controls.Add(this.panelBondYield);
             this.Controls.Add(this.panelBondPrice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
