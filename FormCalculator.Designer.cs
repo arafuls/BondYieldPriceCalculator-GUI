@@ -100,6 +100,7 @@
             this.textBoxPriceRate.Name = "textBoxPriceRate";
             this.textBoxPriceRate.Size = new System.Drawing.Size(61, 20);
             this.textBoxPriceRate.TabIndex = 28;
+            this.textBoxPriceRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // textBoxPriceFace
             // 
@@ -107,6 +108,7 @@
             this.textBoxPriceFace.Name = "textBoxPriceFace";
             this.textBoxPriceFace.Size = new System.Drawing.Size(61, 20);
             this.textBoxPriceFace.TabIndex = 27;
+            this.textBoxPriceFace.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // textBoxPriceYears
             // 
@@ -114,6 +116,7 @@
             this.textBoxPriceYears.Name = "textBoxPriceYears";
             this.textBoxPriceYears.Size = new System.Drawing.Size(61, 20);
             this.textBoxPriceYears.TabIndex = 26;
+            this.textBoxPriceYears.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // textBoxPriceCoupon
             // 
@@ -121,6 +124,7 @@
             this.textBoxPriceCoupon.Name = "textBoxPriceCoupon";
             this.textBoxPriceCoupon.Size = new System.Drawing.Size(61, 20);
             this.textBoxPriceCoupon.TabIndex = 25;
+            this.textBoxPriceCoupon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // labelPriceFace
             // 
@@ -212,6 +216,7 @@
             this.textBoxYieldPrice.Name = "textBoxYieldPrice";
             this.textBoxYieldPrice.Size = new System.Drawing.Size(61, 20);
             this.textBoxYieldPrice.TabIndex = 28;
+            this.textBoxYieldPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // textBoxYieldFace
             // 
@@ -219,6 +224,7 @@
             this.textBoxYieldFace.Name = "textBoxYieldFace";
             this.textBoxYieldFace.Size = new System.Drawing.Size(61, 20);
             this.textBoxYieldFace.TabIndex = 27;
+            this.textBoxYieldFace.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // textBoxYieldYears
             // 
@@ -226,6 +232,7 @@
             this.textBoxYieldYears.Name = "textBoxYieldYears";
             this.textBoxYieldYears.Size = new System.Drawing.Size(61, 20);
             this.textBoxYieldYears.TabIndex = 26;
+            this.textBoxYieldYears.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // textBoxYieldCoupon
             // 
@@ -233,6 +240,7 @@
             this.textBoxYieldCoupon.Name = "textBoxYieldCoupon";
             this.textBoxYieldCoupon.Size = new System.Drawing.Size(61, 20);
             this.textBoxYieldCoupon.TabIndex = 25;
+            this.textBoxYieldCoupon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMoney_KeyPress);
             // 
             // labelYieldFace
             // 
